@@ -10,6 +10,19 @@ namespace Week1_day5
     {
         static void Main(string[] args)
         {
+            string passcode = "orange";
+
+            Console.WriteLine("Enter the secret code:");
+            string userAnswer = Console.ReadLine();
+
+            if (passcode == userAnswer.ToLower()) 
+            {
+                Console.WriteLine("Woo-hoo!");
+            }
+            else
+            {
+                Console.WriteLine("Run me again with \"CTRL+F5\"");
+            }
 
         }
     }
